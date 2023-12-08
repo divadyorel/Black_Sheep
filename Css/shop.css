@@ -1,0 +1,126 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+}
+
+
+/* -----------------------------------------------Barre de navigation----------------------------------------------- */
+
+
+header {   
+    position: fixed;
+    top: 0;
+    z-index: 2; 
+    width: 100%;
+    height: 40px;
+    background-color: rgb(46, 46, 46);
+    border-top: 1px solid rgb(221, 220, 220);   
+}
+
+.logo-reseaux {
+    position: relative;
+    padding: 5px 10px;   
+    left: 20px;
+}
+
+.logo-users{
+    float: right;
+    position: relative;
+    right: 20px;    
+    padding: 5px 10px;
+}
+
+#user {
+    display: inline;    
+}
+
+#ul-connect {
+    position: fixed;
+    top: 40px;
+    right: 0px;
+}
+
+.connect {   
+    display: none;
+    float: right;
+    height: 16px;   
+    padding: 3px 5px;
+    border: 1px solid black;       
+    background-color: rgb(62, 151, 130);
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------------Bandeau-------------------------------------------------*/
+
+
+#head {
+    background-color: rgb(221, 220, 220);
+    position: fixed;
+    z-index: 2;
+    top: 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 97px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#logoG {
+    width: 100px;
+    position: fixed;
+    left: 50px;
+}
+
+#logoD {
+    width: 100px;
+    position: fixed;
+    right: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    height: 60px;
+    font-weight: bold;    
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%); 
+    padding: 20px 0;
+}
+
+.bouton {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 13px;
+    background-color: rgb(83, 83, 83);
+    padding: 7px 10px;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 4px rgb(141, 141, 141) ,inset -1px -1px 4px rgba(0, 0, 0, 0.726);
+}
+
+.bouton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bouton:active {
+    box-shadow: inset -1px -1px 4px rgb(141, 141, 141) ,inset 1px 1px 4px rgba(0, 0, 0, 0.726);
+}
+
+/* -----------------------------------------------Background----------------------------------------------- */
+
+
+#background {
+    position: fixed;
+    z-index: auto;   
+    top: 170px; 
+    left: 30%;
+    width: 40%;
+    opacity: 0.11;
+}
+

@@ -1,0 +1,492 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+}
+
+
+/* -----------------------------------------------Barre de navigation----------------------------------------------- */
+
+
+header {   
+    position: fixed;
+    z-index: 2; 
+    width: 100%;
+    height: 40px;
+    background-color: rgb(46, 46, 46);
+    border-top: 1px solid rgb(221, 220, 220);   
+}
+
+#user {
+    display: inline;    
+}
+
+.logo-reseaux {
+    position: relative;
+    padding: 6px 0 5px 10px;   
+    left: 20px;
+    height: 27px;
+}
+
+.logo-users{
+    float: right;
+    position: relative;
+    right: 20px;    
+    padding: 5px 10px;
+}
+
+#compte {
+    padding-left: 30px;
+}
+
+#ul-connect {
+    position: fixed;
+    top: 40px;
+    right: 0px;
+}
+
+.connect {   
+    display: none;
+    float: right;
+    height: 16px;   
+    padding: 3px 5px;
+    border: 1px solid black;       
+    background-color: rgb(62, 151, 130);
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------Fenêtre inscription----------------------------------------------- */
+
+
+#modal {
+    position: fixed;    
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 550px;
+    padding: 20px;
+    background-color: rgb(168, 168, 168);
+    display: block;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#titre-modal {
+    height: 50px;
+    margin: 30px auto 0px;
+    text-align: center;
+} 
+
+form {
+    display: table;
+    position: relative;
+    top: -20px;
+}
+
+.form {
+    display: table-row;   
+}
+
+label {
+    display: table-cell;
+    padding-left: 20px;
+}
+
+input {
+    display: table-cell;
+    margin: 10px 0 5px 50px;
+    width: 110%;
+    height: 35px;
+    padding: 0 20px;
+}
+
+#civ {
+    margin-left: 20px;    
+}
+
+#civilite {
+    display: inline;
+    margin-left: 30px;  
+}
+
+.m_mme{
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 20px; 
+}
+
+#monsieur, #madame {
+    position: relative;
+    top: 10px;
+}
+
+#validez {
+    font-family: 'Special Elite';
+    font-size: 15px;
+    padding: 5px 30px 0 30px;
+    position: relative;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30px;
+    width: 150px;
+    background-color: rgb(0, 160, 0);
+    border: none;
+    border-radius: 7px;
+    box-shadow: inset 1px 1px 2px rgb(148, 255, 148), inset -1px -1px 2px rgb(1, 20, 1);
+}
+
+#validez:active {
+    box-shadow: inset -1px -1px 3px rgb(127, 255, 127), inset 2px 2px 3px rgb(1, 20, 1);
+}
+
+
+/*-------------------------------------------------Bandeau-------------------------------------------------*/
+
+
+#head {
+    background-color: rgb(221, 220, 220);
+    position: fixed;
+    z-index: 2;
+    top: 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 97px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#logoG {
+    width: 100px;
+    position: fixed;
+    left: 50px;
+}
+
+#logoD {
+    width: 100px;
+    position: fixed;
+    right: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    height: 60px;
+    font-weight: bold;    
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%); 
+    padding: 20px 0;
+}
+
+.bouton {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 13px;
+    background-color: rgb(83, 83, 83);
+    padding: 7px 10px;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 4px rgb(141, 141, 141) ,inset -1px -1px 4px rgba(0, 0, 0, 0.726);
+}
+
+.bouton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bouton:active {
+    box-shadow: inset -1px -1px 4px rgb(141, 141, 141) ,inset 1px 1px 4px rgba(0, 0, 0, 0.726);
+}
+
+/* -----------------------------------------------Background----------------------------------------------- */
+
+
+#background {
+    position: fixed;
+    z-index: auto;   
+    top: 170px; 
+    left: 30%;
+    width: 40%;
+    opacity: 0.2;
+}
+
+
+
+/* -----------------------------------------------Photos--------------------------------------------------- */
+
+
+
+#diapo
+{
+    position: relative;
+    top: 280px;
+}
+
+.slides {
+    display: none;
+    justify-content: space-around;     
+    position: relative;
+    z-index: 1;
+    margin: 0 75px 100px;
+    
+}
+
+.prev, .next {    
+    position: absolute;
+    top: 45%;
+    padding: 20px 15px;
+    margin: 0 35px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 100% 10px 10px 100%; 
+    box-shadow: inset 2px 2px 3px rgb(187, 187, 187) ,inset -2px -2px 4px rgba(0, 0, 0, 0.726);
+    cursor: pointer;
+}
+
+.next {
+    float: right;
+    right: 0px;
+    border-radius: 10px 100% 100% 10px;
+}
+
+.prev:hover, .next:hover {
+    background: rgba(83, 83, 83, 1);
+}
+
+.prev:active, .next:active {
+    box-shadow: inset -2px -2px 3px rgb(187, 187, 187) ,inset 2px 2px 4px rgba(0, 0, 0, 0.726);
+}
+
+
+
+/* -----------------------------------------------dates concert----------------------------------------------- */
+
+
+
+#tableau {
+    margin-top: 430px;
+}
+
+table {   
+    margin: 0px auto 200px;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    position: relative;
+    border-collapse: collapse;
+}
+
+th {    
+    text-align: center;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#titres {
+    background: rgb(221, 220, 220);  
+}
+
+tr {  
+    text-align: center;    
+}
+
+td {   
+    border: 1px solid black;
+    height: 40px;
+    padding: 7px 10px 0;
+}
+
+#Dates {
+    width: 7%;
+    font-weight: bold;
+}
+
+#Dates, #lieux, #loc, #debut {
+    font-weight: bold;
+}
+
+
+#debut {
+    width: 5%;
+}
+
+.Debut, .Dates {
+    background-color: rgba(51, 121, 105, 0.404);
+    color: rgb(187, 52, 52);    
+}
+
+.Lieux, .Adresse {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#loc {
+    width: 8%;
+}
+
+/* -----------------------------------------------responsive----------------------------------------------- */
+
+
+@media screen and (max-width : 1800px){
+    input {       
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 1750px){
+    input {       
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width : 1650px){
+    #modal {
+        top: 180px;
+    }
+
+    input {       
+        width: 90%;
+    }
+
+    .pic {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width : 1600px){
+    #modal {
+        top: 180px;
+    }
+
+    input {       
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 1550px){
+    input {       
+        width: 70%;
+    }
+}
+
+@media screen and (max-width : 1450px){
+    .pic {
+        height: 350px;
+    }
+
+    .prev, .next { 
+        top: 40%;
+    }
+
+    #tableau {
+        margin-top: 400px;
+    }
+
+    #modal {
+        height: 470px;
+    }
+
+    #titre-modal {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    #monsieur, #madame {
+        top: 5px;
+    }
+    
+    
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        margin: 10px 0 5px 50px;
+        width: 60%;
+        height: 25px;
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width : 1350px) {
+    #madame {
+        padding-left: 0;
+    }
+
+    .slides {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width : 1250px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    #background {
+        top: 170px;    
+    }
+    
+    #diapo
+    {
+        top: 230px;   
+    }
+
+    .pic {
+        height: 300px;
+    }
+
+    .slides {
+        margin-bottom: 50px;
+    }
+
+    #tableau {
+        margin-top: 320px;
+    }
+}
+
+@media screen and (max-width : 1150px) {
+    h1 {
+        font-size: 3em;
+    }
+
+    .pic {
+        height: 250px;
+    }
+
+    .prev, .next { 
+        top: 38%;
+    }
+}
+
+
+@media screen and (max-width : 900px) {
+    .pic {
+        height: 200px;
+    }
+
+    .prev, .next { 
+        top: 35%;
+    }
+
+    #tableau {
+        margin-top: 300px;
+    }
+}

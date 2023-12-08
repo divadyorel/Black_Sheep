@@ -1,0 +1,548 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+}
+
+
+/* -----------------------------------------------Barre de navigation----------------------------------------------- */
+
+
+header {   
+    position: fixed;
+    top: 0;
+    z-index: 2; 
+    width: 100%;
+    height: 40px;
+    background-color: rgb(46, 46, 46);
+    border-top: 1px solid rgb(221, 220, 220);   
+}
+
+#user {
+    display: inline;    
+}
+
+.logo-reseaux {
+    position: relative;
+    padding: 6px 0 5px 10px;   
+    left: 20px;
+    height: 27px;
+}
+
+.logo-users{
+    float: right;
+    position: relative;
+    right: 20px;    
+    padding: 5px 10px;
+}
+
+#compte {
+    padding-left: 30px;
+}
+
+#ul-connect {
+    position: fixed;
+    top: 40px;
+    right: 0px;
+}
+
+.connect {   
+    display: none;
+    float: right;
+    height: 16px;   
+    padding: 3px 5px;
+    border: 1px solid black;       
+    background-color: rgb(62, 151, 130);
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------Fenêtre inscription----------------------------------------------- */
+
+
+#modal {
+    position: fixed;    
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 550px;
+    padding: 20px;
+    background-color: rgb(168, 168, 168);
+    display: block;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#titre-modal {
+    height: 50px;
+    margin: 30px auto 0px;
+    text-align: center;
+} 
+
+form {
+    display: table;
+    position: relative;
+    top: -20px;
+}
+
+.form {
+    display: table-row;   
+}
+
+label {
+    display: table-cell;
+    padding-left: 20px;
+}
+
+input {
+    display: table-cell;
+    margin: 10px 0 5px 50px;
+    width: 110%;
+    height: 35px;
+    padding: 0 20px;
+}
+
+#civ {
+    margin-left: 20px;    
+}
+
+#civilite {
+    display: inline;
+    margin-left: 30px;  
+}
+
+.m_mme{
+    display: inline;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 20px; 
+}
+
+#monsieur, #madame {
+    position: relative;
+    top: 10px;
+}
+
+#validez {
+    font-family: 'Special Elite';
+    font-size: 15px;
+    padding: 5px 30px 0 30px;
+    position: relative;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30px;
+    width: 150px;
+    background-color: rgb(0, 160, 0);
+    border: none;
+    border-radius: 7px;
+    box-shadow: inset 1px 1px 2px rgb(148, 255, 148), inset -1px -1px 2px rgb(1, 20, 1);
+}
+
+#validez:active {
+    box-shadow: inset -1px -1px 3px rgb(127, 255, 127), inset 2px 2px 3px rgb(1, 20, 1);
+}
+
+
+
+/*-------------------------------------------------Bandeau-------------------------------------------------*/
+
+
+#head {
+    background-color: rgb(221, 220, 220);
+    position: fixed;
+    z-index: 2;
+    top: 63px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 97px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#logoG {
+    width: 100px;
+    position: fixed;
+    left: 50px;
+}
+
+#logoD {
+    width: 100px;
+    position: fixed;
+    right: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    height: 60px;
+    font-weight: bold;    
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%); 
+    padding: 20px 0;
+}
+
+.bouton {
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    height: 13px;
+    background-color: rgb(83, 83, 83);
+    padding: 7px 10px;
+    border-radius: 6px;
+    box-shadow: inset 1px 1px 4px rgb(141, 141, 141) ,inset -1px -1px 4px rgba(0, 0, 0, 0.726);
+}
+
+.bouton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bouton:active {
+    box-shadow: inset -1px -1px 4px rgb(141, 141, 141) ,inset 1px 1px 4px rgba(0, 0, 0, 0.726);
+}
+
+/* -----------------------------------------------Background----------------------------------------------- */
+
+
+#background {
+    position: fixed;
+    z-index: auto;   
+    top: 170px; 
+    left: 30%;
+    width: 40%;
+    opacity: 0.11;
+}
+
+
+/* -----------------------------------------------Prénoms et portrait----------------------------------------------- */
+
+aside {
+    float: left;   
+}
+
+h2.prenom { 
+    width: 50%;  
+    font-size: 4em;
+    margin: 50px 0 40px 125px;
+    position: relative;
+    z-index: 1;   
+}
+
+span {
+    border-bottom: 2px solid black;
+}
+
+.music-logo {
+    float: right;
+    margin-top: 50px;
+    margin-right: 100px; 
+}
+
+#batterie {
+    position: relative;
+    top: -40px;
+}
+
+#xav-gratte {
+    position: relative;
+    top: -30px;
+}
+ 
+#coco, #charly, #xavier, #david, #vincent {
+    margin: 70px 70px 20px 70px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;  
+}
+
+/* -----------------------------------------------Biographies----------------------------------------------- */
+
+#pCoco {
+    margin: 170px 50px 0 50px;
+    padding: 230px 0 70px 0;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    text-align: justify;
+    line-height: 1.5em;
+    letter-spacing: 0.7px;
+}
+
+#pCharly, #pXavier, #pDavid, #pVincent{
+    margin: 80px 50px 0 50px;
+    padding: 150px 0 70px 0;
+    font-size: 20px;
+    border-bottom: 2px solid black;
+    text-align: justify;
+    line-height: 1.5em;
+    letter-spacing: 0.7px;
+}
+
+
+/* -----------------------------------------------responsive----------------------------------------------- */
+
+
+
+@media screen and (max-width : 1800px){
+    input {       
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width : 1750px){
+    input {       
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width : 1650px){
+    #modal {
+        top: 180px;
+    }
+
+    input {       
+        width: 90%;
+    }
+
+    .pic {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width : 1600px){
+    #modal {
+        top: 180px;
+    }
+
+    input {       
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 1550px){
+    input {       
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width : 1450px) {
+    #pCoco, #pCharly, #pXavier, #pDavid, #pVincent {
+        font-size: 17px;
+    }
+
+    #titre-modal {
+        height: 50px;
+        margin-bottom: 0px;
+    }
+    
+    label {
+        font-size: 15px;
+    }
+
+    input {
+        margin: 10px 0 5px 50px;
+        width: 60%;
+        height: 25px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width : 1250px) {
+
+    .reseaux{
+        height: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    #pCoco {
+        padding-top: 200px;
+    }
+
+    #pCharly, #pXavier, #pDavid, #pVincent {
+        font-size: 15px;
+        padding-top: 135px;
+    }
+
+    h2.prenom { 
+        width: 50%;  
+        font-size: 3em;
+    }
+
+    .music-logo {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width : 950px) {
+    .nav {
+        margin: 0 90px;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+
+    #pCoco, #charly, #xavier, #david, #vincent{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .nav {
+        margin: 0 50px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    #logoG {
+        width: 50px;
+        top: 38px;
+        left: 10px
+    } 
+
+    #logoD {
+        width: 50px;
+        top: 38px;
+        right: 30px
+    } 
+
+    nav {        
+        margin: 25px auto 0;
+    }
+
+    .nav {
+        margin: 10px ;
+        font-size: 7px;
+    } 
+    
+    #head {
+        height: 30px;
+        margin: 30px 0;
+        padding-top: 10px;
+    }
+
+    .name1 { 
+        width: 150px;  
+        font-size: 2em;
+        padding: 150px 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;   
+    }
+
+    .name2 { 
+        width: 150px;  
+        font-size: 2em;
+        padding: 50px 0 0 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        z-index: 1;   
+    }
+    
+    .reseaux {
+        height: 15px;
+    }
+
+    #background {
+        top: 40%;
+
+    }
+
+    aside {
+        float: none;    
+    }
+
+    span {
+        border-bottom: 2px solid black;
+    }
+
+    #coco {
+        display: block;
+        margin: 50px auto 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #pCoco {
+        font-size: 15px;
+        padding: 50px 0 15px ;
+        margin-top: 20px;
+    }
+
+    #charly {
+        display: block;
+        margin: 50px auto 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #pCharly {
+        font-size: 15px;
+        padding: 50px 0;
+        margin-top: 20px;
+    }
+
+    #xavier {
+        display: block;
+        margin: 50px auto 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #pXavier {
+        font-size: 15px;
+        padding: 50px 0;
+        margin-top: 20px;
+    }
+
+    #david {
+        display: block;
+        margin: 50px auto 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #pDavid {
+        font-size: 15px;
+        padding: 50px 0;
+        margin-top: 20px;
+    }
+
+    #vincent {
+        display: block;
+        margin: 50px auto 0px auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    #pVincent {
+        font-size: 15px;
+        padding: 50px 0;
+        margin-top: 20px;
+    }
+
+}
