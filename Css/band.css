@@ -3,6 +3,7 @@
     margin: 0;
 }
 
+
 body {
     font-family: 'Special Elite', Arial, Helvetica, sans-serif;
 }
@@ -160,6 +161,7 @@ input {
 /*-------------------------------------------------Bandeau-------------------------------------------------*/
 
 
+
 #head {
     background-color: rgb(221, 220, 220);
     position: fixed;
@@ -214,20 +216,10 @@ h1 {
     box-shadow: inset -1px -1px 4px rgb(141, 141, 141) ,inset 1px 1px 4px rgba(0, 0, 0, 0.726);
 }
 
-/* -----------------------------------------------Background----------------------------------------------- */
-
-
-#background {
-    position: fixed;
-    z-index: auto;   
-    top: 170px; 
-    left: 30%;
-    width: 40%;
-    opacity: 0.11;
-}
-
 
 /* -----------------------------------------------Prénoms et portrait----------------------------------------------- */
+
+
 
 aside {
     float: left;   
@@ -270,8 +262,9 @@ span {
 
 /* -----------------------------------------------Biographies----------------------------------------------- */
 
-#pCoco {
-    margin: 170px 50px 0 50px;
+
+#pCoco{
+    margin: 170px 65px 0 65px;
     padding: 230px 0 70px 0;
     font-size: 20px;
     border-bottom: 2px solid black;
@@ -281,7 +274,7 @@ span {
 }
 
 #pCharly, #pXavier, #pDavid, #pVincent{
-    margin: 80px 50px 0 50px;
+    margin: 80px 65px 0 65px;
     padding: 150px 0 70px 0;
     font-size: 20px;
     border-bottom: 2px solid black;

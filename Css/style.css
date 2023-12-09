@@ -234,7 +234,7 @@ h1 {
 #diapo
 {
     position: relative;
-    top: 280px;
+    top: 290px;
 }
 
 .slides {
@@ -242,8 +242,7 @@ h1 {
     justify-content: space-around;     
     position: relative;
     z-index: 1;
-    margin: 0 75px 100px;
-    
+    margin: 0 75px 100px;   
 }
 
 .prev, .next {    
@@ -278,7 +277,7 @@ h1 {
 
 
 #tableau {
-    margin-top: 430px;
+    margin-top: 435px;
 }
 
 table {   
