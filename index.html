@@ -39,8 +39,8 @@
 
             <!-------------------------------------------------fenetre inscription---------------------------------------->
 
-            <div id="modal" style="display: none">
-                <img id="close" src="Medias/Logos/close.png" alt="Close">
+            <div id="modal1" style="display: none">
+                <img id="close1" src="Medias/Logos/close.png" alt="Close">
 
                 <h2 id="titre-modal">CR&#201;EZ VOTRE COMPTE !!</h2>
 
@@ -79,8 +79,29 @@
                     <div class="form"></div>
                     <label for="age"><u>Date de naissance :</u></label>
                     <input type="date" name="age" id="age">
+                </form>    
             </div>
-            </form>
+            
+            <div id="modal2" style="display: none">
+                <img id="close2" src="Medias/Logos/close.png" alt="Close">
+
+                <h2 id="titre-modal">CONNECTEZ-VOUS !!</h2>
+                
+                <button id="validez">VALIDEZ</button>
+
+                <form action="" method="get">
+                    <div class="form">
+                        <label for="mail"><u>Mail :</u></label>
+                        <input type="text" name="mail" id="mail">
+                    </div>
+                    <div class="form">
+                        <label for="mdp"><u>Mot de passe :</u></label>
+                        <input type="text" name="mdp" id="mdp">
+                    </div>
+                </form>
+
+                
+            </div>
         </div>
 
         <!------------------------------------------------------------------------------------------------------------->
@@ -267,6 +288,7 @@
     <script src="JS/slides.js"></script>
     <script src="JS/connect.js"></script>
     <script src="JS/inscription.js"></script>
+    <script src="JS/connection.js"></script>
     <script src="JS/tableau.js"></script>
 </body>
 

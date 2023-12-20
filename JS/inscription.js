@@ -1,18 +1,18 @@
 
 const inscription = document.getElementById('inscription');
-const modal = document.getElementById('modal');
-const closeModalButton = document.getElementById('close');
-const validez = document.getElementById('validez');
+const modal1 = document.getElementById('modal1');
+const closeModalButton1 = document.getElementById('close1');
+const validez1 = document.getElementById('validez');
 
 inscription.addEventListener('click', function() {
-    modal.style.display = 'block';
+    modal1.style.display = 'block';
     
-    closeModalButton.addEventListener ('click', function() {
-    modal.style.display = 'none';
+    closeModalButton1.addEventListener ('click', function() {
+    modal1.style.display = 'none';
     });
 
-    validez.addEventListener('click', function () {
-        modal.style.display = 'none';
+    validez1.addEventListener('click', function () {
+        modal1.style.display = 'none';
     })
 
 });
