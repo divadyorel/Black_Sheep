@@ -85,6 +85,13 @@ header {
     cursor: pointer;
 }
 
+#close-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
 #titre-modal {
     height: 50px;
     margin: 30px auto 0px;
@@ -235,6 +242,7 @@ h1 {
 {
     position: relative;
     top: 290px;
+    
 }
 
 .slides {
@@ -242,31 +250,56 @@ h1 {
     justify-content: space-around;     
     position: relative;
     z-index: 1;
-    margin: 0 75px 100px;   
+    margin: 0 75px 100px; 
 }
 
-.prev, .next {    
+
+#prev, #next {    
     position: absolute;
     top: 45%;
-    padding: 20px 15px;
+    padding: 15px 10px;
     margin: 0 35px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 100% 10px 10px 100%; 
     box-shadow: inset 2px 2px 3px rgb(187, 187, 187) ,inset -2px -2px 4px rgba(0, 0, 0, 0.726);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
     cursor: pointer;
+    user-select: none;
 }
 
-.next {
+#prev-button, #next-button {
+    position: absolute;
+    top: 45%;
+    padding: 15px 10px;
+    margin: 0 35px;
+    background: rgb(105, 105, 105);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 100% 10px 10px 100%; 
+    box-shadow: inset 2px 2px 3px rgb(187, 187, 187) ,inset -2px -2px 3px rgba(0, 0, 0, 0.726);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#prev-button {
+    float: left;
+    right: 0px;
+    border-radius: 10px 100% 100% 10px;
+}
+
+#next {
     float: right;
     right: 0px;
     border-radius: 10px 100% 100% 10px;
 }
 
-.prev:hover, .next:hover {
+#prev:hover, #next:hover, #prev-button:hover, #next-button:hover {
     background: rgba(83, 83, 83, 1);
 }
 
-.prev:active, .next:active {
+.prev:active, .next:active, #prev-button:active, #next-button:active {
     box-shadow: inset -2px -2px 3px rgb(187, 187, 187) ,inset 2px 2px 4px rgba(0, 0, 0, 0.726);
 }
 
@@ -309,6 +342,10 @@ td {
     padding: 7px 10px 0;
 }
 
+.gps {
+    color: rgb(57, 57, 253);
+}
+
 #Dates {
     width: 7%;
     font-weight: bold;
@@ -335,6 +372,39 @@ td {
 
 #loc {
     width: 8%;
+}
+
+#pic-modal {
+    position: fixed;
+    z-index: 2;    
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 60%;
+    height: 470px;
+    padding-top: 20px;
+    background-color: rgb(168, 168, 168);
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#slideshow-container {
+    display: flex;
+    overflow: hidden;
+}
+
+#slideshow-container img {
+    margin: auto;
+    height: 450px;
+    display: none;
+}
+
+#slideshow-container img:first-child {
+    display: block;
 }
 
 /* -----------------------------------------------responsive----------------------------------------------- */
@@ -490,3 +560,4 @@ td {
         margin-top: 300px;
     }
 }
+

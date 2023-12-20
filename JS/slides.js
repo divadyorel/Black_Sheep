@@ -9,13 +9,25 @@ function showSlides(n) {
 
     let slides = document.getElementsByClassName('slides');
 
-    if(n > slides.length) { slideIndex = 1 }
+    if(n > slides.length) { 
+        slideIndex = 1 }
 
-    if( n < 1 ) { slideIndex = slides.length}
+    if( n < 1 ) { 
+        slideIndex = slides.length}
 
     for( let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
     slides[slideIndex - 1].style.display = 'flex'; 
+}
+
+const prevNext = document.getElementsByClassName('prev-next');
+const slides = document.getElementsByClassName('slides');
+for (let i = 0; i < prevNext.length; i++) {
+    prevNext[i].addEventListener('click', function() {
+        for (let j = 0; j < slides.length; j++) {
+            slides[j].style.transition = 'true';
+        }
+    });
 }

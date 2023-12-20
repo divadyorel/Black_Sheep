@@ -40,7 +40,7 @@
             <!-------------------------------------------------fenetre inscription---------------------------------------->
 
             <div id="modal" style="display: none">
-                <img id="close" src="Medias/Logos/close.png">
+                <img id="close" src="Medias/Logos/close.png" alt="Close">
 
                 <h2 id="titre-modal">CR&#201;EZ VOTRE COMPTE !!</h2>
 
@@ -78,7 +78,7 @@
                     </div>
                     <div class="form"></div>
                     <label for="age"><u>Date de naissance :</u></label>
-                    <input type="text" name="age" id="age">
+                    <input type="date" name="age" id="age">
             </div>
             </form>
         </div>
@@ -152,8 +152,8 @@
             <img class="pic" src="Medias/Photos/diapo18.png" alt="photo du groupe">
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev-next" id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev-next" id="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
 
@@ -164,9 +164,8 @@
         <table>
             <thead>
                 <tr>
-                    <th colspan="6"><u>
-                            <h2>PROCHAINEMENT EN CONCERT :
-                        </u></h2>
+                    <th colspan="6">
+                            <u><h2>PROCHAINEMENT EN CONCERT :</u></h2>                       
                     </th>
                 </tr>
             </thead>
@@ -178,17 +177,17 @@
                     <td id="loc" colspan="2">Localisation</td>
                     <td id="debut">Début</td>
                 </tr>
-
-                <tr>
+                
+                <tr class="date" id="dateRow1">
                     <td class="Dates">16/12/2023</td>
                     <td class="Lieux">Au pub "Les brasseurs d'air"</td>
                     <td class="Adresse">L'essert, 17600 CORME-ECLUSE</td>
                     <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/PLWwyQYPRDbD35U3A">MAPS</a></td>                           
                     <td><a target="_blank" class="gps" href="https://waze.com/ul/hgbp7s95et">WAZE</a></td>
-                    <td class="Debut">20H</td>
+                    <td class="Debut" >20H</td>
                 </tr>
-
-                <tr>
+                
+                <tr class="date" id="dateRow2">
                     <td class="Dates">17/07/2024</td>
                     <td class="Lieux">Au kiosque de ronce-les-bains (La Tremblade)</td>
                     <td class="Adresse">61 Av. Gabrielle, 17390 La Tremblade</td>
@@ -197,7 +196,7 @@
                     <td class="Debut">20H</td>
                 </tr>
 
-                <tr>
+                <tr class="date" id="dateRow3">
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
@@ -206,7 +205,7 @@
                     <td class="Debut"></td>
                 </tr>
 
-                <tr>
+                <tr class="date" id="dateRow4">
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
@@ -215,7 +214,7 @@
                     <td class="Debut"></td>
                 </tr>
 
-                <tr>
+                <tr class="date" id="dateRow5">
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
@@ -223,13 +222,53 @@
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
+
+                <tr class="date" id="dateRow6">
+                    <td class="Dates"></td>
+                    <td class="Lieux"></td>
+                    <td class="Adresse"></td>
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                    <td class="Debut"></td>
+                </tr>
+
+                <tr class="date" id="dateRow7">
+                    <td class="Dates"></td>
+                    <td class="Lieux"></td>
+                    <td class="Adresse"></td>
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                    <td class="Debut"></td>
+                </tr>
+
+                <tr class="date" id="dateRow8">
+                    <td class="Dates"></td>
+                    <td class="Lieux"></td>
+                    <td class="Adresse"></td>
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                    <td class="Debut"></td>
+                </tr>
+
+                <tr class="date" id="dateRow9">
+                    <td class="Dates"></td>
+                    <td class="Lieux"></td>
+                    <td class="Adresse"></td>
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                    <td class="Debut"></td>
+                </tr>
+
             </tbody>
         </table>
+        
     </div>
 
     <script src="JS/slides.js"></script>
     <script src="JS/connect.js"></script>
     <script src="JS/inscription.js"></script>
+    <script src="JS/tableau.js"></script>
 </body>
 
 </html>
+
