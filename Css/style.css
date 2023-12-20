@@ -67,13 +67,28 @@ header {
 /* -----------------------------------------------Fenêtre inscription----------------------------------------------- */
 
 
-#modal1, #modal2 {
+#modal1 {
     position: fixed;    
     top: 220px;
     left: 50%;
     transform: translate(-50%);
     width: 30%;
     height: 550px;
+    padding: 20px;
+    background-color: rgb(168, 168, 168);
+    display: block;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.7);
+}
+
+#modal2 {
+    position: fixed;    
+    top: 220px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    height: 300px;
     padding: 20px;
     background-color: rgb(168, 168, 168);
     display: block;
@@ -146,7 +161,7 @@ input {
     top: 10px;
 }
 
-#validez {
+#validez1 {
     font-family: 'Special Elite';
     font-size: 15px;
     padding: 5px 30px 0 30px;
@@ -162,7 +177,23 @@ input {
     box-shadow: inset 1px 1px 2px rgb(148, 255, 148), inset -1px -1px 2px rgb(1, 20, 1);
 }
 
-#validez:active {
+#validez2 {
+    font-family: 'Special Elite';
+    font-size: 15px;
+    padding: 5px 30px 0 30px;
+    position: relative;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%);
+    height: 30px;
+    width: 150px;
+    background-color: rgb(0, 160, 0);
+    border: none;
+    border-radius: 7px;
+    box-shadow: inset 1px 1px 2px rgb(148, 255, 148), inset -1px -1px 2px rgb(1, 20, 1);
+}
+
+#validez1:active, #validez2:active {
     box-shadow: inset -1px -1px 3px rgb(127, 255, 127), inset 2px 2px 3px rgb(1, 20, 1);
 }
 
