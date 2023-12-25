@@ -30,4 +30,4 @@ for (let i = 0; i < prevNext.length; i++) {
             slides[j].style.transition = 'true';
         }
     });
-}
+};

@@ -53,7 +53,7 @@
                             <label for="civilite"><u>M. : </u></label>
                             <input type="radio" name="civilite" id="monsieur" class="m_mme">
                             <label for="civilite" class="m_mme"><u>Mme : </u></label>
-                            <input type="radio" name="civilite" id="madame" class="m_mme" >
+                            <input type="radio" name="civilite" id="madame" class="m_mme">
                         </div>
                     </div>
                     <div class="form">
@@ -79,14 +79,14 @@
                     <div class="form"></div>
                     <label for="age"><u>Date de naissance :</u></label>
                     <input type="date" name="age" id="age">
-                </form>    
+                </form>
             </div>
-            
+
             <div id="modal2" style="display: none">
                 <img id="close2" src="Medias/Logos/close.png" alt="Close">
 
                 <h2 id="titre-modal">CONNECTEZ-VOUS !!</h2>
-                
+
                 <button id="validez2">VALIDEZ</button>
 
                 <form action="" method="get">
@@ -100,27 +100,26 @@
                     </div>
                 </form>
 
-                
+
             </div>
         </div>
 
         <!------------------------------------------------------------------------------------------------------------->
 
-
-        </div>
-
     </header>
 
+
     <!-------------------------------------------------Bandeau------------------------------------------------------------->
+
 
     <div id="head">
         <img id="logoG" src="Medias/Logos/black_sheep.png" alt="logo Black Sheep">
 
-        <a class="bouton" href="band.html">Le groupe</a>
+        <a class="bouton" id="boutonG" href="band.html">Le groupe</a>
 
         <h1>BLACK SHEEP</h1>
 
-        <a class="bouton" href="shop.html">La boutique</a>
+        <a class="bouton" id="boutonD" href="shop.html">La boutique</a>
 
         <img id="logoD" src="Medias/Logos/black_sheep.png" alt="logo Black Sheep">
     </div>
@@ -178,7 +177,7 @@
     </div>
 
 
-    <!-------------------------------------------------Dates de concert (tableau)---------------------------------------------------------->    
+    <!-------------------------------------------------Dates de concert (tableau)---------------------------------------------------------->
 
 
     <div id="tableau">
@@ -186,7 +185,9 @@
             <thead>
                 <tr>
                     <th colspan="6">
-                            <u><h2>PROCHAINEMENT EN CONCERT :</u></h2>                       
+                        <u>
+                            <h2>PROCHAINEMENT EN CONCERT :
+                        </u></h2>
                     </th>
                 </tr>
             </thead>
@@ -198,39 +199,41 @@
                     <td id="loc" colspan="2">Localisation</td>
                     <td id="debut">Début</td>
                 </tr>
-                
+
                 <tr class="date" id="dateRow1">
                     <td class="Dates">16/12/2023</td>
                     <td class="Lieux">Au pub "Les brasseurs d'air"</td>
                     <td class="Adresse">L'essert, 17600 CORME-ECLUSE</td>
-                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/PLWwyQYPRDbD35U3A">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/PLWwyQYPRDbD35U3A">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="https://waze.com/ul/hgbp7s95et">WAZE</a></td>
-                    <td class="Debut" >20H</td>
+                    <td class="Debut">20H</td>
+                </tr>                
+
+                <tr class="date" id="dateRow2">
+                    <td class="Dates">27/01/2024</td>
+                    <td class="Lieux">salles des fêtes de Chaillevette</td>
+                    <td class="Adresse">21 rue de la mairie 17390 Chaillevette</td>
+                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/rR1Fk7CWk9mjAXBA8">MAPS</a></td>
+                    <td><a target="_blank" class="gps"
+                            href="https://ul.waze.com/ul?place=ChIJT_8ZsxVwAUgRYgQs94Rc7lc&ll=45.73131050%2C-1.06886280&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">WAZE</a>
+                    </td>
+                    <td class="Debut">20H</td>
                 </tr>
                 
-                <tr class="date" id="dateRow2">
+                <tr class="date" id="dateRow3">
                     <td class="Dates">17/07/2024</td>
                     <td class="Lieux">Au kiosque de ronce-les-bains (La Tremblade)</td>
                     <td class="Adresse">61 Av. Gabrielle, 17390 La Tremblade</td>
-                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/EWvscAE3BsbWR6SLA">MAPS</a></td>                            
+                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/EWvscAE3BsbWR6SLA">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="https://www.waze.com/ul/hgbpht3rfv">WAZE</a></td>
                     <td class="Debut">20H</td>
-                </tr>
-
-                <tr class="date" id="dateRow3">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                            
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
                 </tr>
 
                 <tr class="date" id="dateRow4">
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                        
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
@@ -239,7 +242,7 @@
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
@@ -248,7 +251,7 @@
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
@@ -257,7 +260,7 @@
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
@@ -266,7 +269,7 @@
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
@@ -275,14 +278,21 @@
                     <td class="Dates"></td>
                     <td class="Lieux"></td>
                     <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>                           
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
                     <td><a target="_blank" class="gps" href="#">WAZE</a></td>
                     <td class="Debut"></td>
                 </tr>
 
+                <tr class="date" id="dateRow10">
+                    <td class="Dates"></td>
+                    <td class="Lieux"></td>
+                    <td class="Adresse"></td>
+                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                    <td class="Debut"></td>
+                </tr>
             </tbody>
         </table>
-        
     </div>
 
     <script src="JS/slides.js"></script>
@@ -293,4 +303,3 @@
 </body>
 
 </html>
-

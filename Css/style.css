@@ -68,7 +68,8 @@ header {
 
 
 #modal1 {
-    position: fixed;    
+    position: fixed;
+    z-index: 3;    
     top: 220px;
     left: 50%;
     transform: translate(-50%);
@@ -129,7 +130,7 @@ form {
 
 label {
     display: table-cell;
-    padding-left: 20px;
+    margin-left: 20px;
 }
 
 input {
@@ -146,7 +147,7 @@ input {
 
 #civilite {
     display: inline;
-    margin-left: 30px;  
+    margin-left: 50px;     
 }
 
 .m_mme{
@@ -340,7 +341,7 @@ h1 {
 
 
 
-/* -----------------------------------------------dates concert----------------------------------------------- */
+/* -----------------------------------------------tableau dates concert----------------------------------------------- */
 
 
 
@@ -389,7 +390,6 @@ td {
 #Dates, #lieux, #loc, #debut {
     font-weight: bold;
 }
-
 
 #debut {
     width: 5%;
@@ -494,7 +494,7 @@ td {
         height: 350px;
     }
 
-    .prev, .next { 
+    #prev, #next { 
         top: 40%;
     }
 
@@ -511,11 +511,14 @@ td {
         margin-top: 20px;
     }
 
+    form {
+        margin: 0 20px 0 0;
+    }
+
     #monsieur, #madame {
         top: 5px;
     }
-    
-    
+        
     label {
         font-size: 14px;
     }
@@ -532,6 +535,10 @@ td {
 @media screen and (max-width : 1350px) {
     #madame {
         padding-left: 0;
+    }
+
+    #prev, #next { 
+        top: 40%;
     }
 
     .slides {
@@ -554,6 +561,10 @@ td {
         top: 230px;   
     }
 
+    #prev, #next { 
+        top: 40%;
+    }
+
     .pic {
         height: 300px;
     }
@@ -562,12 +573,20 @@ td {
         margin-bottom: 50px;
     }
 
+    #modal2{
+        width: 35%;
+    }
+
     #tableau {
         margin-top: 320px;
     }
 }
 
 @media screen and (max-width : 1150px) {
+    #modal1{
+        width: 40%;
+    }
+
     h1 {
         font-size: 3em;
     }
@@ -579,10 +598,19 @@ td {
     .prev, .next { 
         top: 38%;
     }
+
+    #modal2{
+        width: 40%;
+    }
 }
 
 
-@media screen and (max-width : 900px) {
+@media screen and (max-width : 950px) {
+    .bouton{
+        padding-bottom: 3px;
+        font-size: 80%;
+    }
+
     .pic {
         height: 200px;
     }
@@ -591,8 +619,97 @@ td {
         top: 35%;
     }
 
+    #modal1{
+        width: 50%;
+    }
+
+    #modal2{
+        width: 50%;
+    }
+
     #tableau {
         margin-top: 300px;
     }
 }
+
+@media screen and (max-width : 900px) {
+    header {
+        height: 60px;
+    }
+
+    .logo-reseaux,.logo-users {
+        height: 45px;
+        margin: 0 10px;
+    }
+
+    .connect {
+        height: 36px;
+        display: flex;
+        height: 20px;
+        padding: 11px;
+    }
+
+    #ul-connect{
+        top: 60px;
+        font-size: 23px;
+        
+    }
+
+    #head {
+        height: 150px;
+        top: 103px;
+    }
+
+    #logoG {
+        width: 140px;
+        top: 110px;
+        left: 20px;
+    }
+    
+    #logoD {
+        width: 140px;
+        top: 110px;
+        right: 20px;
+    }
+
+    #boutonG {
+        margin-left: 230px;
+        margin-top: 95px;
+        font-size: 23px;
+        height: 25px;
+        padding: 8px 10px;
+    }
+
+    #boutonD {
+        margin-right: 230px;
+        margin-top: 95px;
+        font-size: 23px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    h1 {
+        font-size: 4em;
+        height: 40px;
+        padding-top: 25px;
+    }
+
+    .bouton {
+        margin-top: 60px;
+        padding: 8px 20px;
+    }
+
+    #modal1, #modal2 {
+        top: 400px;
+    }
+    
+    #diapo {
+        margin-top: 150px;
+    }
+
+    .pic {
+        height: 230px;
+    }
+}
+
 

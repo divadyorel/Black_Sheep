@@ -387,6 +387,11 @@ span {
 }
 
 @media screen and (max-width : 950px) {
+    .bouton{
+        padding-bottom: 3px;
+        font-size: 80%;
+    }
+
     .nav {
         margin: 0 90px;
     }
@@ -395,8 +400,19 @@ span {
         font-size: 3em;
     }
 
-    #pCoco, #charly, #xavier, #david, #vincent{
-        font-size: 15px;
+    .bouton {
+        height: 12px;
+    }
+
+    #micro {
+        max-width: 120px;
+    }
+    .music-logo {
+        width: 180px;
+    }
+
+    #pCoco, #pCharly, #pXavier, #pDavid, #pVincent{
+        font-size: 22px;
     }
 }
 
@@ -456,17 +472,16 @@ span {
         z-index: 1;   
     }
     
-    .reseaux {
-        height: 15px;
-    }
-
     #background {
         top: 40%;
-
     }
 
     aside {
         float: none;    
+    }
+
+    .music-logo {
+        size: 20px;
     }
 
     span {
