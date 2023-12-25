@@ -40,9 +40,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 gpsCell.style.color = 'black';
             });
 
-            // Clone la ligne et ajoute le clone à la section des dates passées
-            //pastDatesContainer.appendChild(dateRaw[i].cloneNode(true));
-
             // Ajoute la date à l'array des dates passées
             pastDates.push({ date: concertDate, row: dateRaw[i] });
 
