@@ -179,136 +179,146 @@
 
     <!-------------------------------------------------Dates de concert (tableau)---------------------------------------------------------->
 
+    <div id="tableaux-container">
+        <div id="tableau">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="6">
+                            <u>
+                                <h2>PROCHAINEMENT EN CONCERT :
+                            </u></h2>
+                        </th>
+                    </tr>
+                </thead>
 
-    <div id="tableau">
-        <table>
-            <thead>
-                <tr>
-                    <th colspan="6">
-                        <u>
-                            <h2>PROCHAINEMENT EN CONCERT :
-                        </u></h2>
-                    </th>
-                </tr>
-            </thead>
+                <tbody>
+                    <tr id="titres">
+                        <td id="Dates">Dates</td>
+                        <td id="lieux" colspan="2">Lieux</td>
+                        <td id="loc" colspan="2">Localisation</td>
+                        <td id="debut">Début</td>
+                    </tr>
 
-            <tbody>
-                <tr id="titres">
-                    <td id="Dates">Dates</td>
-                    <td id="lieux" colspan="2">Lieux</td>
-                    <td id="loc" colspan="2">Localisation</td>
-                    <td id="debut">Début</td>
-                </tr>
+                    <tr class="date" id="dateRow1">
+                        <td class="Dates">16/12/2023</td>
+                        <td class="Lieux">Au pub "Les brasseurs d'air"</td>
+                        <td class="Adresse">L'essert, 17600 CORME-ECLUSE</td>
+                        <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/PLWwyQYPRDbD35U3A">MAPS</a>
+                        </td>
+                        <td><a target="_blank" class="gps" href="https://waze.com/ul/hgbp7s95et">WAZE</a></td>
+                        <td class="Debut">20H</td>
+                    </tr>
 
-                <tr class="date" id="dateRow1">
-                    <td class="Dates">16/12/2023</td>
-                    <td class="Lieux">Au pub "Les brasseurs d'air"</td>
-                    <td class="Adresse">L'essert, 17600 CORME-ECLUSE</td>
-                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/PLWwyQYPRDbD35U3A">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="https://waze.com/ul/hgbp7s95et">WAZE</a></td>
-                    <td class="Debut">20H</td>
-                </tr>                
+                    <tr class="date" id="dateRow2">
+                        <td class="Dates">27/01/2024</td>
+                        <td class="Lieux">salles des fêtes de Chaillevette</td>
+                        <td class="Adresse">21 rue de la mairie 17390 Chaillevette</td>
+                        <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/rR1Fk7CWk9mjAXBA8">MAPS</a>
+                        </td>
+                        <td><a target="_blank" class="gps"
+                                href="https://ul.waze.com/ul?place=ChIJT_8ZsxVwAUgRYgQs94Rc7lc&ll=45.73131050%2C-1.06886280&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">WAZE</a>
+                        </td>
+                        <td class="Debut">20H</td>
+                    </tr>
 
-                <tr class="date" id="dateRow2">
-                    <td class="Dates">27/01/2024</td>
-                    <td class="Lieux">salles des fêtes de Chaillevette</td>
-                    <td class="Adresse">21 rue de la mairie 17390 Chaillevette</td>
-                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/rR1Fk7CWk9mjAXBA8">MAPS</a></td>
-                    <td><a target="_blank" class="gps"
-                            href="https://ul.waze.com/ul?place=ChIJT_8ZsxVwAUgRYgQs94Rc7lc&ll=45.73131050%2C-1.06886280&navigate=yes&utm_campaign=default&utm_source=waze_website&utm_medium=lm_share_location">WAZE</a>
-                    </td>
-                    <td class="Debut">20H</td>
-                </tr>
-                
-                <tr class="date" id="dateRow3">
-                    <td class="Dates">17/07/2024</td>
-                    <td class="Lieux">Au kiosque de ronce-les-bains (La Tremblade)</td>
-                    <td class="Adresse">61 Av. Gabrielle, 17390 La Tremblade</td>
-                    <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/EWvscAE3BsbWR6SLA">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="https://www.waze.com/ul/hgbpht3rfv">WAZE</a></td>
-                    <td class="Debut">20H</td>
-                </tr>
+                    <tr class="date" id="dateRow3">
+                        <td class="Dates">17/07/2024</td>
+                        <td class="Lieux">Au kiosque de ronce-les-bains (La Tremblade)</td>
+                        <td class="Adresse">61 Av. Gabrielle, 17390 La Tremblade</td>
+                        <td><a target="_blank" class="gps" href="https://maps.app.goo.gl/EWvscAE3BsbWR6SLA">MAPS</a>
+                        </td>
+                        <td><a target="_blank" class="gps" href="https://www.waze.com/ul/hgbpht3rfv">WAZE</a></td>
+                        <td class="Debut">20H</td>
+                    </tr>
 
-                <tr class="date" id="dateRow4">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow4">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow5">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow5">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow6">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow6">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow7">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow7">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow8">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow8">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow9">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow9">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow10">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
+                    <tr class="date" id="dateRow10">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
 
-                <tr class="date" id="dateRow11">
-                    <td class="Dates"></td>
-                    <td class="Lieux"></td>
-                    <td class="Adresse"></td>
-                    <td><a target="_blank" class="gps" href="#">MAPS</a></td>
-                    <td><a target="_blank" class="gps" href="#">WAZE</a></td>
-                    <td class="Debut"></td>
-                </tr>
-            </tbody>
-        </table>
+                    <tr class="date" id="dateRow11">
+                        <td class="Dates"></td>
+                        <td class="Lieux"></td>
+                        <td class="Adresse"></td>
+                        <td><a target="_blank" class="gps" href="#">MAPS</a></td>
+                        <td><a target="_blank" class="gps" href="#">WAZE</a></td>
+                        <td class="Debut"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="navigation-buttons">
+        <a class="prev-next-table" id="prev-table" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="prev-next-table" id="next-table" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
     <script src="JS/slides.js"></script>
     <script src="JS/connect.js"></script>
     <script src="JS/inscription.js"></script>
     <script src="JS/connection.js"></script>
-    <script src="JS/tableau.js"></script>
+    <script src="JS/tableau.js">
+
+    </script>
 </body>
 
 </html>
