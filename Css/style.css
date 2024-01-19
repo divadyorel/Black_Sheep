@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -11,31 +11,31 @@ body {
 /* -----------------------------------------------Barre de navigation----------------------------------------------- */
 
 
-header {   
+header {
     position: fixed;
     top: 0;
-    z-index: 2; 
+    z-index: 2;
     width: 100%;
     height: 40px;
     background-color: rgb(46, 46, 46);
-    border-top: 1px solid rgb(221, 220, 220);   
+    border-top: 1px solid rgb(221, 220, 220);
 }
 
 #user {
-    display: inline;    
+    display: inline;
 }
 
 .logo-reseaux {
     position: relative;
-    padding: 6px 0 5px 10px;   
+    padding: 6px 0 5px 10px;
     left: 20px;
     height: 27px;
 }
 
-.logo-users{
+.logo-users {
     float: right;
     position: relative;
-    right: 20px;    
+    right: 20px;
     padding: 5px 10px;
 }
 
@@ -49,12 +49,12 @@ header {
     right: 0px;
 }
 
-.connect {   
+.connect {
     display: none;
     float: right;
-    height: 16px;   
+    height: 16px;
     padding: 3px 5px;
-    border: 1px solid black;       
+    border: 1px solid black;
     background-color: rgb(62, 151, 130);
     cursor: pointer;
 }
@@ -69,7 +69,7 @@ header {
 
 #modal1 {
     position: fixed;
-    z-index: 3;    
+    z-index: 3;
     top: 220px;
     left: 50%;
     transform: translate(-50%);
@@ -84,7 +84,7 @@ header {
 }
 
 #modal2 {
-    position: fixed;    
+    position: fixed;
     top: 220px;
     left: 50%;
     transform: translate(-50%);
@@ -98,7 +98,8 @@ header {
     box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.7), inset -2px -2px 3px rgba(0, 0, 0, 0.7);
 }
 
-#close1, #close2 {
+#close1,
+#close2 {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -116,7 +117,7 @@ header {
     height: 50px;
     margin: 30px auto 0px;
     text-align: center;
-} 
+}
 
 form {
     display: table;
@@ -125,7 +126,7 @@ form {
 }
 
 .form {
-    display: table-row;   
+    display: table-row;
 }
 
 label {
@@ -142,22 +143,23 @@ input {
 }
 
 #civ {
-    margin-left: 20px;    
+    margin-left: 20px;
 }
 
 #civilite {
     display: inline;
-    margin-left: 50px;     
+    margin-left: 50px;
 }
 
-.m_mme{
+.m_mme {
     display: inline;
     margin-left: 10px;
     margin-bottom: 20px;
-    width: 20px; 
+    width: 20px;
 }
 
-#monsieur, #madame {
+#monsieur,
+#madame {
     position: relative;
     top: 10px;
 }
@@ -194,7 +196,8 @@ input {
     box-shadow: inset 1px 1px 2px rgb(148, 255, 148), inset -1px -1px 2px rgb(1, 20, 1);
 }
 
-#validez1:active, #validez2:active {
+#validez1:active,
+#validez2:active {
     box-shadow: inset -1px -1px 3px rgb(127, 255, 127), inset 2px 2px 3px rgb(1, 20, 1);
 }
 
@@ -230,10 +233,10 @@ input {
 h1 {
     font-size: 4em;
     height: 60px;
-    font-weight: bold;    
+    font-weight: bold;
     position: fixed;
     left: 50%;
-    transform: translate(-50%); 
+    transform: translate(-50%);
     padding: 20px 0;
 }
 
@@ -245,7 +248,7 @@ h1 {
     background-color: rgb(83, 83, 83);
     padding: 7px 10px;
     border-radius: 6px;
-    box-shadow: inset 1px 1px 4px rgb(141, 141, 141) ,inset -1px -1px 4px rgba(0, 0, 0, 0.726);
+    box-shadow: inset 1px 1px 4px rgb(141, 141, 141), inset -1px -1px 4px rgba(0, 0, 0, 0.726);
 }
 
 .bouton:hover {
@@ -253,7 +256,7 @@ h1 {
 }
 
 .bouton:active {
-    box-shadow: inset -1px -1px 4px rgb(141, 141, 141) ,inset 1px 1px 4px rgba(0, 0, 0, 0.726);
+    box-shadow: inset -1px -1px 4px rgb(141, 141, 141), inset 1px 1px 4px rgba(0, 0, 0, 0.726);
 }
 
 /* -----------------------------------------------Background----------------------------------------------- */
@@ -261,8 +264,8 @@ h1 {
 
 #background {
     position: fixed;
-    z-index: auto;   
-    top: 170px; 
+    z-index: auto;
+    top: 170px;
     left: 30%;
     width: 40%;
     opacity: 0.2;
@@ -274,45 +277,46 @@ h1 {
 
 
 
-#diapo
-{
+#diapo {
     position: relative;
     top: 290px;
-    
+
 }
 
 .slides {
     display: none;
-    justify-content: space-around;     
+    justify-content: space-around;
     position: relative;
     z-index: 1;
-    margin: 0 75px 100px; 
+    margin: 0 75px 100px;
 }
 
 
-#prev, #next {    
+#prev,
+#next {
     position: absolute;
     top: 45%;
     padding: 15px 10px;
     margin: 0 35px;
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 100% 10px 10px 100%; 
-    box-shadow: inset 2px 2px 3px rgb(187, 187, 187) ,inset -2px -2px 4px rgba(0, 0, 0, 0.726);
+    border-radius: 100% 10px 10px 100%;
+    box-shadow: inset 2px 2px 3px rgb(187, 187, 187), inset -2px -2px 4px rgba(0, 0, 0, 0.726);
     color: rgb(255, 255, 255);
     font-size: 20px;
     cursor: pointer;
     user-select: none;
 }
 
-#prev-button, #next-button {
+#prev-button,
+#next-button {
     position: absolute;
     top: 45%;
     padding: 15px 10px;
     margin: 0 35px;
     background: rgb(105, 105, 105);
     border: 1px solid rgba(255, 255, 255, 0.26);
-    border-radius: 100% 10px 10px 100%; 
-    box-shadow: inset 2px 2px 3px rgb(187, 187, 187) ,inset -2px -2px 3px rgba(0, 0, 0, 0.726);
+    border-radius: 100% 10px 10px 100%;
+    box-shadow: inset 2px 2px 3px rgb(187, 187, 187), inset -2px -2px 3px rgba(0, 0, 0, 0.726);
     color: rgb(255, 255, 255);
     font-size: 20px;
     cursor: pointer;
@@ -331,12 +335,18 @@ h1 {
     border-radius: 10px 100% 100% 10px;
 }
 
-#prev:hover, #next:hover, #prev-button:hover, #next-button:hover {
+#prev:hover,
+#next:hover,
+#prev-button:hover,
+#next-button:hover {
     background: rgba(83, 83, 83, 1);
 }
 
-.prev:active, .next:active, #prev-button:active, #next-button:active {
-    box-shadow: inset -2px -2px 3px rgb(187, 187, 187) ,inset 2px 2px 4px rgba(0, 0, 0, 0.726);
+.prev:active,
+.next:active,
+#prev-button:active,
+#next-button:active {
+    box-shadow: inset -2px -2px 3px rgb(187, 187, 187), inset 2px 2px 4px rgba(0, 0, 0, 0.726);
 }
 
 
@@ -345,41 +355,66 @@ h1 {
 
 
 
-#tableau {
+#tableau1, #tableau2 {
+    position: relative;
+    z-index: 1;
     margin-top: 435px;
+    background-color: rgb(181, 192, 214);
+    border: 2px solid black;   
 }
 
-table {   
+table {
     margin: 0px auto 200px;
-    border: 2px solid black;
-    background-color: rgb(255, 255, 255);
     width: 90%;
     position: relative;
     border-collapse: collapse;
 }
 
-th {    
+th {
     text-align: center;
     height: 60px;
-    background: rgba(0, 0, 0, 0.5);
+}
+
+#div-title1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(64, 93, 158);
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+    width: 130%;
+    float: inline-start;
+    cursor: pointer;
+}
+
+#div-title2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(190, 134, 134);
+    border-radius: 20px 20px 0px 0px;
+    height: 100%;
+    width: 70%;
+    float: inline-end;
+    cursor: pointer;
 }
 
 #titres {
-    background: rgb(221, 220, 220);  
+    background: rgba(221, 220, 220, 0.425);
 }
 
-tr {  
-    text-align: center;    
+tr {
+    text-align: center;
 }
 
-td {   
+td {
     border: 1px solid black;
     height: 40px;
     padding: 7px 10px 0;
 }
 
 .gps {
-    color: rgb(57, 57, 253);
+    color: rgb(34, 126, 31);
 }
 
 #Dates {
@@ -387,7 +422,11 @@ td {
     font-weight: bold;
 }
 
-#Dates, #lieux, #loc, #debut {
+#Dates,
+#lieux,
+#adresse,
+#loc,
+#debut {
     font-weight: bold;
 }
 
@@ -395,12 +434,14 @@ td {
     width: 5%;
 }
 
-.Debut, .Dates {
+.Debut,
+.Dates {
     background-color: rgba(51, 121, 105, 0.404);
-    color: rgb(187, 52, 52);    
+    color: rgb(187, 52, 52);
 }
 
-.Lieux, .Adresse {
+.Lieux,
+.Adresse {
     text-align: left;
     padding-left: 10px;
 }
@@ -411,7 +452,7 @@ td {
 
 #pic-modal {
     position: fixed;
-    z-index: 2;    
+    z-index: 2;
     top: 220px;
     left: 50%;
     transform: translate(-50%);
@@ -445,26 +486,26 @@ td {
 /* -----------------------------------------------responsive----------------------------------------------- */
 
 
-@media screen and (max-width : 1800px){
-    input {       
+@media screen and (max-width : 1800px) {
+    input {
         width: 100%;
     }
 }
 
 
-@media screen and (max-width : 1750px){
-    input {       
+@media screen and (max-width : 1750px) {
+    input {
         width: 95%;
     }
 }
 
 
-@media screen and (max-width : 1650px){
+@media screen and (max-width : 1650px) {
     #modal {
         top: 180px;
     }
 
-    input {       
+    input {
         width: 90%;
     }
 
@@ -473,28 +514,29 @@ td {
     }
 }
 
-@media screen and (max-width : 1600px){
+@media screen and (max-width : 1600px) {
     #modal {
         top: 180px;
     }
 
-    input {       
+    input {
         width: 80%;
     }
 }
 
-@media screen and (max-width : 1550px){
-    input {       
+@media screen and (max-width : 1550px) {
+    input {
         width: 70%;
     }
 }
 
-@media screen and (max-width : 1450px){
+@media screen and (max-width : 1450px) {
     .pic {
         height: 350px;
     }
 
-    #prev, #next { 
+    #prev,
+    #next {
         top: 40%;
     }
 
@@ -515,10 +557,11 @@ td {
         margin: 0 20px 0 0;
     }
 
-    #monsieur, #madame {
+    #monsieur,
+    #madame {
         top: 5px;
     }
-        
+
     label {
         font-size: 14px;
     }
@@ -537,7 +580,8 @@ td {
         padding-left: 0;
     }
 
-    #prev, #next { 
+    #prev,
+    #next {
         top: 40%;
     }
 
@@ -553,15 +597,15 @@ td {
     }
 
     #background {
-        top: 170px;    
-    }
-    
-    #diapo
-    {
-        top: 230px;   
+        top: 170px;
     }
 
-    #prev, #next { 
+    #diapo {
+        top: 230px;
+    }
+
+    #prev,
+    #next {
         top: 40%;
     }
 
@@ -573,7 +617,7 @@ td {
         margin-bottom: 50px;
     }
 
-    #modal2{
+    #modal2 {
         width: 35%;
     }
 
@@ -583,7 +627,7 @@ td {
 }
 
 @media screen and (max-width : 1150px) {
-    #modal1{
+    #modal1 {
         width: 40%;
     }
 
@@ -595,18 +639,19 @@ td {
         height: 250px;
     }
 
-    .prev, .next { 
+    .prev,
+    .next {
         top: 38%;
     }
 
-    #modal2{
+    #modal2 {
         width: 40%;
     }
 }
 
 
 @media screen and (max-width : 950px) {
-    .bouton{
+    .bouton {
         padding-bottom: 3px;
         font-size: 80%;
     }
@@ -615,15 +660,16 @@ td {
         height: 200px;
     }
 
-    .prev, .next { 
+    .prev,
+    .next {
         top: 35%;
     }
 
-    #modal1{
+    #modal1 {
         width: 50%;
     }
 
-    #modal2{
+    #modal2 {
         width: 50%;
     }
 
@@ -637,7 +683,8 @@ td {
         height: 60px;
     }
 
-    .logo-reseaux,.logo-users {
+    .logo-reseaux,
+    .logo-users {
         height: 45px;
         margin: 0 10px;
     }
@@ -649,10 +696,10 @@ td {
         padding: 11px;
     }
 
-    #ul-connect{
+    #ul-connect {
         top: 60px;
         font-size: 23px;
-        
+
     }
 
     #head {
@@ -665,7 +712,7 @@ td {
         top: 110px;
         left: 20px;
     }
-    
+
     #logoD {
         width: 140px;
         top: 110px;
@@ -699,10 +746,11 @@ td {
         padding: 8px 20px;
     }
 
-    #modal1, #modal2 {
+    #modal1,
+    #modal2 {
         top: 400px;
     }
-    
+
     #diapo {
         margin-top: 150px;
     }
@@ -711,5 +759,3 @@ td {
         height: 230px;
     }
 }
-
-
